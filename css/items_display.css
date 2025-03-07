@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    background: #FFF8ED;
+    display: flex;
+}
+
+
+.sidebar {
+    background-color: rgb(28, 64, 46);
+    height: 100%;
+    width: 20%;
+    color: #FFF8ED;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.sidebar_logo {
+    align-self: flex-start;
+    margin-bottom: 2px;
+}
+
+.sidebar_logo img {
+    width: 100%;
+    height: auto;
+}
+
+.menu_top a {
+    display: block;
+    padding: 10px;
+    color: #FFF8ED;
+    text-decoration: none;
+    padding-top: 10px;
+    float: left;
+}
+
+i {
+    margin-right: 10px;
+}
+
+.content {
+    background: #FFF8ED;
+    height: 100%;
+    padding-left: 22%;
+    width: 100%;
+}
+
+.header {
+    font-family: 'Poppins';
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    color: rgb(28, 64, 46);
+    height: 65px;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+
+
+.search_bar {
+    width: calc(100%-200px);
+    border: 2px solid #1c402e;
+    border-right: none;
+    padding: 5px;
+    height: 25px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+    padding-right: 40px;
+    float: right;
+    margin-left: 70%;
+}
+
+
+.search_bar:focus {
+    color: #1c402e;
+}
+
+.search-btn {
+    width: 40px;
+    height: 25px;
+    border: 1px solid #1c402e;
+    background: #1c402e;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.filter_form {
+    margin-top: 35px;
+}
+
+#filterForm {
+    display: flex;
+}
+
+#filterForm label {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#filterForm select,
+#filterForm input[type="text"] {
+    padding: 2px;
+    border: 1px solid #1c402e;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#filterForm #apply-filters {
+    margin-left: 10px;
+    background-color: #1c402e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+#filterForm #apply-filters:hover {
+    background-color: #fff;
+    color: #1c402e;
+    border: #1c402e 1px solid;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pages {
+    position: relative;
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pages button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #1c402e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.pages button:hover {
+    background: #1c402e;
+}
+
+#prev-btn {
+    margin-left: 15px;
+    background-color: #1c402e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    cursor: pointer;
+    margin-bottom: 30px;
+
+}
+
+#next-btn {
+    margin-right: 30px;
+    background-color: #1c402e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.items {
+    margin-top: 35px;
+    padding: 20px;
+    background-color: #FFF8ED;
+    flex-grow: 1;
+}
+
+.item a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.item a:hover {
+    text-decoration: none;
+    color: #1c402e;
+
+}
+
+.lost {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.item {
+    border: #1c402e 1px solid;
+    padding: 20px;
+    text-align: center;
+}
+
+.pagination {
+    position: absolute;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    color: black;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
