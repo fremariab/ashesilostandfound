@@ -91,8 +91,6 @@ ashesilostandfound/
 - **Payload:** `{item_name, location, description, category, image}`
 - **Response:** Success/Failure message
 
-## Screenshots
-*(Include relevant screenshots here)*
 
 ## Testing Credentials
 - **Home Page:** [Lost & Found System](http://localhost/ashesilostandfound/view/home_about.php)
